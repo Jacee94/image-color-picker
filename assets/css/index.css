@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #958456;
+    padding: 30px;
+}
+
+header h1 {
+    color: white !important;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 50%;
+}
+
+#color-selections {
+justify-content: center;
+}
+
+#color-select__content {
+   display: flex;
+   justify-content: space-around;
+}
+
+#color-selections div{
+    width: 100px;
+    height: 100px;
+    margin: .5rem;
+    background-color: beige;
+}
+
+#theme-box div{
+    display: inline-flex;
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black
+}
