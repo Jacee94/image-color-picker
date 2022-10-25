@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css"/>
 </head>
 <body>
-    
+    <header>
+            <h1 class="title is-1">Color Palette Picker</h1>
+    </header>
+
+    <main>
+        <section id="image-gen">
+            <h2 class="title is-1">
+                Random Photo Picker
+            </h2>
+            <button class='button is-dark' id="photo-btn">Random Photo</button>
+            <div id="random-photo">
+                <image></image>
+            </div>
+        </section>
+            
+        <section id='color-select'>
+            <h4 class="title is-1">Choose 2 Colors</h4>
+            
+            <div id="color-select__content">
+                <div>
+                    <p>Color Title</p>
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+                <div id="color-selections">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="theme-gen">
+            <h3 class="title is-1" id="theme-title"> Generate Theme </h3>
+            
+            <div id="them-gen__content">
+                <button class="button is-dark" id="theme-btn">Generate</button>
+                <div id="theme-box">
+                    <div id="theme1"></div>
+                    <div id="theme2"></div>
+                    <div id="theme3"></div>
+                    <div id="theme4"></div>
+                    <div id="theme5"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
