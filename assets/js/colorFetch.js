@@ -3,7 +3,6 @@ var colorTwo = [255, 255, 255];
 var palette = [];
 var genUrl = "http://colormind.io/api/";
 
-
 function generateScheme() {
 var data = {
   model: "default",
