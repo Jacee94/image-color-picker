@@ -2,14 +2,14 @@ var colorOne = [44, 44, 44];
 var colorTwo = [255, 255, 255];
 var palette = [];
 var genUrl = "http://colormind.io/api/";
-var data = {
-  model: "default",
-  input: [colorOne, colorTwo, "N", "N", "N"],
-};
+
 
 function generateScheme() {
-  //colorOne = colorPickerOne
-  //colorTwo = colorPickerTwo
+var data = {
+  model: "default",
+  input: [colorPickerOne, colorPickerTwo, "N", "N", "N"],
+};
+
   $("#theme-box").empty();
   var http = new XMLHttpRequest();
 
