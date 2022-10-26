@@ -15,7 +15,7 @@ http.onreadystatechange = function() {
         for (var i = 0; i < 5; i++) {
             let currPalette = palette[i]
             var finalScheme = `rgb(${currPalette[0]},${currPalette[1]},${currPalette[2]})`
-            let colorBox = $('<div>').attr(`id`,`theme${i}`).css(`background-color`, finalScheme)
+            let colorBox = $('<div>').attr(`id`,`theme${i}`).css(`background-color`, finalScheme).text(finalScheme)
             $('#theme-box').append(colorBox)
         }
     }

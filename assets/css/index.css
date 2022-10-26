@@ -33,11 +33,21 @@ justify-content: center;
     margin: .5rem;
     background-color: beige;
 }
+#theme-gen{
+    width: 100vw;
+    text-align: center;
+}
+#them-gen__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
 
 #theme-box div{
-    display: inline-flex;
     background-color: grey;
-    width: 100px;
-    height: 100px;
+    color: white;
+    width: 150px;
+    height: 150px;
+    text-shadow: 1px 1px black;
     border: 1px solid black
 }
