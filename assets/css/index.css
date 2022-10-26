@@ -29,7 +29,7 @@ justify-content: center;
 }
 
 #color-selections div{
-    width: 100px;
+    width: 200px;
     height: 100px;
     margin: .5rem;
     background-color: beige;
@@ -45,11 +45,20 @@ justify-content: center;
 }   
 
 #theme-box div{
-    background-color: grey;
     color: white;
     width: 150px;
     height: 150px;
     text-shadow: 1px 1px black;
     margin: 1px;
     border: 1px solid black;
+}
+
+#input-color {
+    width: 100%;
+    height: 100%;
+}
+
+#input-color-two {
+    width: 100%;
+    height: 100%;
 }
