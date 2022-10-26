@@ -23,8 +23,8 @@ colorInputTwo.addEventListener("input", () => {
 // Function based off a stack overflow response: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
 function hexToRGB(hex) {
   var r = parseInt(hex.slice(1, 3), 16),
-      g = parseInt(hex.slice(3, 5), 16),
-      b = parseInt(hex.slice(5, 7), 16);
+    g = parseInt(hex.slice(3, 5), 16),
+    b = parseInt(hex.slice(5, 7), 16);
 
-  return [r,g,b];
+  return [r, g, b];
 }

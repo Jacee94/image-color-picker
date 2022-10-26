@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/index.css"/>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
     <header>
-            <h1 class="title is-1">Color Palette Picker</h1>
+      <h1 class="title is-1">Color Palette Picker</h1>
     </header>
 
     <main>
-        <section id="image-gen">
-            <h2 class="title is-1">
-                Random Photo Picker
-            </h2>
-            <div id="random-photo">
+      <section id="image-gen">
+        <h2 class="title is-1">Random Photo Picker</h2>
+        <div id="random-photo"></div>
+        <button class="button is-dark" id="photo-btn">Random Photo</button>
+      </section>
 
-            </div>
-            <button class='button is-dark' id="photo-btn">Random Photo</button>
-        </section>
-            
-        <section id='color-select'>
-            <h4 class="title is-1">Choose 2 Colors</h4>
-            
+      <section id="color-select">
+        <h4 class="title is-1">Choose 2 Colors</h4>
+
         <div id="picker" class="picker">
-            <div class="picker-box">
-                <div id="color-selections">
-                        <div class="picker-inputs">
-                            <input type="color" class="picker-input" id="input-color">
-                        </div>
-                        <div class="picker-inputs">
-                            <input type="color" class="picker-input" id="input-color-two">
-                        </div>
-                </div>
+          <div class="picker-box">
+            <div id="color-selections">
+              <div class="picker-inputs">
+                <input type="color" class="picker-input" id="input-color" />
+              </div>
+              <div class="picker-inputs">
+                <input type="color" class="picker-input" id="input-color-two" />
+              </div>
             </div>
+          </div>
         </div>
-        </section>
+      </section>
 
-        <section id="theme-gen">
-            <h3 class="title is-1" id="theme-title"> Generate Theme </h3>
-            
-            <div id="them-gen__content">
-                <button class="button is-dark" id="theme-btn">Generate</button>
-                <div id="theme-box">
-                </div>
-            </div>
-        </section>
+      <section id="theme-gen">
+        <h3 class="title is-1" id="theme-title">Generate Theme</h3>
+
+        <div id="them-gen__content">
+          <button class="button is-dark" id="theme-btn">Generate</button>
+          <div id="theme-box"></div>
+        </div>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/colorpicker.js"></script>
     <script src="./assets/js/colorFetch.js"></script>
     <script src="./assets/js/random-image.js"></script>
-</body>
+  </body>
 </html>
