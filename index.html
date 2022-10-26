@@ -27,16 +27,18 @@
         <section id='color-select'>
             <h4 class="title is-1">Choose 2 Colors</h4>
             
-            <div id="color-select__content">
-                <div>
-                    <p>Color Title</p>
-                    <input class="input" type="text" placeholder="Text input">
-                </div>
+        <div id="picker" class="picker">
+            <div class="picker-box">
                 <div id="color-selections">
-                    <div></div>
-                    <div></div>
+                        <div class="picker-inputs">
+                            <input type="color" class="picker-input" id="input-color">
+                        </div>
+                        <div class="picker-inputs">
+                            <input type="color" class="picker-input" id="input-color-two">
+                        </div>
                 </div>
             </div>
+        </div>
         </section>
 
         <section id="theme-gen">
@@ -54,6 +56,6 @@
             </div>
         </section>
     </main>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/colorpicker.js"></script>
 </body>
 </html>
