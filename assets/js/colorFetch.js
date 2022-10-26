@@ -1,12 +1,16 @@
-var colorOne = [50,43,44]
-var colorTwo = [90,83,82]
+var colorOne = [44,44,44]
+var colorTwo = [255,255,255]
 var palette = []
-var url = "http://colormind.io/api/";
+var genUrl = "http://colormind.io/api/";
 var data = {
 	model : "default",
 	input : [colorOne,colorTwo,"N","N","N"]
 }
 
+function generateScheme(){
+    //colorOne = colorPickerOne 
+    //colorTwo = colorPickerTwo
+    
 var http = new XMLHttpRequest();
 
 http.onreadystatechange = function() {
@@ -15,12 +19,14 @@ http.onreadystatechange = function() {
         for (var i = 0; i < 5; i++) {
             let currPalette = palette[i]
             var finalScheme = `rgb(${currPalette[0]},${currPalette[1]},${currPalette[2]})`
-            let colorBox = $('<div>').attr(`id`,`theme${i}`).css(`background-color`, finalScheme)
+            let colorBox = $('<div>').attr(`id`,`theme${i}`).css(`background-color`, finalScheme).text(finalScheme)
             $('#theme-box').append(colorBox)
         }
     }
 }
 
-http.open("POST", url, true);
+http.open("POST", genUrl, true);
 http.send(JSON.stringify(data)); 
+}
 
+$('#theme-btn').on('click', generateScheme)
