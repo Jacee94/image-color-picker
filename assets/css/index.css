@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     justify-content: center;
@@ -49,5 +50,6 @@ justify-content: center;
     width: 150px;
     height: 150px;
     text-shadow: 1px 1px black;
-    border: 1px solid black
+    margin: 1px;
+    border: 1px solid black;
 }
