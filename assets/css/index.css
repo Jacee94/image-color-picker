@@ -1,56 +1,64 @@
+:root{
+    text-align: center;
+    color: white !important;
+}
 
 header {
     display: flex;
     justify-content: center;
-    background-color: #958456;
+    background-color: #6A6262;
     padding: 30px;
 }
 
-header h1 {
+header h1, h2 {
     color: white !important;
-}
-main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 section {
-    width: 50%;
+    background-color: #4F4A4A;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
-#color-selections {
-justify-content: center;
+#image-gen, #color-select {
+    padding: 30px !important;
 }
 
-#color-select__content {
-   display: flex;
-   justify-content: space-around;
+#picker-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#color-selections div{
+.picker {
     width: 200px;
-    height: 100px;
-    margin: .5rem;
-    background-color: beige;
+    height: 200px;
 }
+
 #theme-gen{
-    width: 100vw;
-    text-align: center;
+    margin: 20px 10px
 }
-#them-gen__content{
+
+#theme-gen__content{
     display: flex;
     flex-direction: column;
     align-items: center;
 }   
 
+#theme-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 #theme-box div{
     color: white;
-    width: 150px;
-    height: 150px;
+    width: 18vw;
+    height: 18vw;
     text-shadow: 1px 1px black;
     margin: 1px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 #input-color {
@@ -58,7 +66,10 @@ justify-content: center;
     height: 100%;
 }
 
-#input-color-two {
-    width: 100%;
-    height: 100%;
+#random-photo {
+    height: 300px;
+}
+
+#random-photo img {
+    box-shadow: 0px 0px 25px black;
 }

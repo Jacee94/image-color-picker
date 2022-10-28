@@ -15,36 +15,36 @@
     <header>
       <h1 class="title is-1">Color Palette Picker</h1>
     </header>
+    <br>
 
-    <main>
-      <section id="image-gen">
-        <h2 class="title is-1">Random Photo Picker</h2>
-        <div id="random-photo"></div>
-        <button class="button is-dark" id="photo-btn">Random Photo</button>
-      </section>
+    <main class="">
+      <div class="columns first-row">
+        <section id="image-gen" class="column">
+          <h2 class="title is-1">Random Photo Picker</h2>
+          <div id="random-photo">
 
-      <section id="color-select">
-        <h4 class="title is-1">Choose a Color</h4>
+          </div>
+          <br>
+          <button class="button is-dark" id="photo-btn">Random Photo</button>
+        </section>
 
-        <div id="picker" class="picker">
-          <div class="picker-box">
-            <div id="color-selections">
-              <div class="picker-inputs">
-                <input type="color" class="picker-input" id="input-color" />
-              </div>
-              <!-- <div class="picker-inputs">
-                <input type="color" class="picker-input" id="input-color-two" />
-              </div> -->
+        <section id="color-select" class="column">
+          <h2 class="title is-1">Choose a Color</h4>
+
+          <div id="picker-wrapper">
+            <div id="picker" class="picker container">
+              <input type="color" class="picker-input" id="input-color" />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section id="theme-gen">
-        <h3 class="title is-1" id="theme-title">Generate Theme</h3>
+      <section id="theme-gen" class="">
+        <h2 class="title is-1" id="theme-title">Generate Theme</h3>
 
-        <div id="them-gen__content">
+        <div id="theme-gen__content">
           <button class="button is-dark" id="theme-btn">Generate</button>
+          <br>
           <div id="theme-box"></div>
         </div>
       </section>
