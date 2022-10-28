@@ -1,10 +1,10 @@
 var colorOne = [44, 44, 44];
 var colorTwo = [255, 255, 255];
 var palette = [];
-var genUrl = "https://colormind.io/api/";
+var url = "http://colormind.io/api/";
 
 function generateScheme() {
-var data = {
+var dataE = {
   model: "default",
   input: [colorPickerOne, colorPickerTwo, "N", "N", "N"],
 };
@@ -27,8 +27,8 @@ var data = {
     }
   };
 
-  http.open("POST", genUrl, true);
-  http.send(JSON.stringify(data));
+  http.open("POST", url, true);
+  http.send(JSON.stringify(dataE));
 }
 
 $("#theme-btn").on("click", generateScheme);
