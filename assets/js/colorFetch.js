@@ -1,7 +1,7 @@
 var colorOne = [44, 44, 44];
 var colorTwo = [255, 255, 255];
 var palette = [];
-var url = "https://colormind.io/api/";
+var url = "http://colormind.io/api/";
 
 function generateScheme() {
 var dataE = {
