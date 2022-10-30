@@ -37,9 +37,15 @@ function addColorHistoryButtons() {
   
   const colorHist = JSON.parse(localStorage.getItem('color-picker-history'));
   colorHist.forEach((color) => {
-    const newBtn = `<button class='color-history-btn m-2 button is-dark'>${color}</button>`
+    const newBtn = `<button class='color-history-btn m-2 button'>${color}</button>`;
 
     $colorHist.append(newBtn);
+  })
+
+  $('.color-history-btn').each((ind, el) => {
+    $(el).css('background-color', $(el).text())
+         .css('color', 'white')
+         .css('text-shadow', '2px 2px 2px #000');
   })
 
   $('.color-history-btn').on('click', (event) => {
