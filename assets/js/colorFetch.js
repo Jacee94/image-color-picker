@@ -33,18 +33,14 @@ function saveColorToStorage(color) {
 
 function addColorHistoryButtons() {
   const $colorHist = $('.color-history');
-  console.log($colorHist);
   $colorHist.empty();
   
   const colorHist = JSON.parse(localStorage.getItem('color-picker-history'));
-  console.log(colorHist);
   colorHist.forEach((color) => {
     const newBtn = `<button class='color-history-btn m-2 button is-dark'>${color}</button>`
 
     $colorHist.append(newBtn);
   })
-
-  console.log($('.color-history-btn'))
 
   $('.color-history-btn').on('click', (event) => {
     event.preventDefault();

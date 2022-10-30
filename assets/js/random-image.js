@@ -20,4 +20,4 @@ function appendImage(image) {
   $("#random-photo").addClass('img-loaded');
 }
 
-$("#photo-btn").click(fetchRandomPhoto);
+$("#photo-btn").click(fetchRandomPhoto); 
