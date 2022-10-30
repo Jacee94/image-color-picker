@@ -18,11 +18,11 @@
     <br>
 
     <main class="">
-      <div class="columns first-row">
-        <section id="image-gen" class="column">
+      <div class="columns">
+        <section id="image-gen" class="column is-flex is-flex-direction-column is-align-items-center">
           <h2 class="title is-1">Random Photo Picker</h2>
-          <div id="random-photo">
-
+          <div id="random-photo" class="has-text-black">
+            <div class="img-placeholder is-flex is-align-items-center is-justify-content-center has-text-weight-bold">???</div>
           </div>
           <br>
           <button class="button is-dark" id="photo-btn">Random Photo</button>
@@ -45,7 +45,17 @@
         <div id="theme-gen__content">
           <button class="button is-dark" id="theme-btn">Generate</button>
           <br>
-          <div id="theme-box"></div>
+          <div id="theme-box">
+            <div>???</div>
+            <div>???</div>
+            <div>???</div>
+            <div>???</div>
+            <div>???</div>
+          </div>
+          <div class="color-history-wrapper">
+            <h4 class="subtitle has-text-white is-4">Color History:</h4>
+            <div class="color-history"></div>
+          </div>
         </div>
       </section>
     </main>
