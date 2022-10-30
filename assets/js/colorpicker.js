@@ -5,7 +5,6 @@ var pickerBody = document.getElementById("picker");
 
 var colorPickerOne;
 
-
 function setColor(target) {
   var color = target.value;
   return (color)
@@ -14,5 +13,3 @@ function setColor(target) {
 colorInput.addEventListener("input", () => {
   colorPickerOne = setColor(colorInput);
 });
-
-
