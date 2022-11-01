@@ -1,6 +1,6 @@
 # Color Palette Picker
 ## Description
-This website allows a user to generate a random image. From this random image the user can then select two colors and create a color theme that displays three other colors making up a five color theme.
+This website allows a user to generate a random image. From this random image the user can then select a color and create a color theme that displays four other colors making up a five color theme.
 
 ## Technologies Used
  - Bulma - CSS FrameWork
