@@ -1,6 +1,6 @@
 # Color Palette Picker
 ## Description
-This website allows a user to generate a random image. From this random image the user can then select two colors and create a color theme that displays three other colors making up a five color theme.
+This website allows a user to generate a random image. From this random image the user can then select a color and create a color theme that displays four other colors making up a five color theme.
 
 ## Technologies Used
  - Bulma - CSS FrameWork
@@ -8,7 +8,7 @@ This website allows a user to generate a random image. From this random image th
  - TheColorApi - Color Theme generator
 
 ## Usage
- The user clicks on the generate photo button to generate a random image. They then can choose two colors form the image and store them off to the side. The generate theme button will then take those two colors and generate a full color theme for the user.
+ The user clicks on the generate photo button to generate a random image. They then can choose a color from the image and store it off to the side. The generate theme button will then take that color and generate a full color theme for the user.
 
 ## URL and Screenshot
 [GitHub Repo](https://github.com/Jacee94/image-color-picker)  
